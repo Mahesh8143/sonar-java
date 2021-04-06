@@ -14,7 +14,7 @@ pipeline {
         }
         stage("Maven Build") {
             steps {
-                sh 'mvn clean install -f my-app/pom.xml'
+                sh 'mvn clean install -f sonar-java/pom.xml'
             }
         }
          stage('Deploy') {
