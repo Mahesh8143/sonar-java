@@ -12,7 +12,7 @@ pipeline {
                 sh 'mvn --version'
             }
         }
-     /*   stage("Maven Build") {
+        stage("Maven Build") {
             steps {
                 sh 'mvn clean install -f my-app/pom.xml'
             }
@@ -26,6 +26,6 @@ pipeline {
             steps {
                echo "successfully depoyed"
             }
-        } */
+        } 
     }
 }
